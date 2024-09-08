@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+
+<body>
+
+    <form action="demo.html">
+        <label for="email">Email</label>
+
+        <input type="email" placeholder="Email" id="email" name="email" />
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" />
+
+        <label for="birthdate">Дата рождения</label>
+        <input type="date" placeholder="День рождения" id="birthdate" name="birthdate" />
+        <input type="hidden" name="hidden">
+
+        <label for="color">Цвет</label>
+        <input type="color" id="color" name="color" />
+
+        <label for="number">Number</label>
+        <input type="number" placeholder="Number" id="number" />
+        <button type="button">Button</button>
+        <button type="reset">reset</button>
+
+        <input type="button" value="My Button" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <!--https://www.youtube.com/results-->
+
+
+    <h1>Форма поиска</h1>
+
+    <form action="https://www.youtube.com/results" method="get">
+        <label for="search">search</label>
+
+        <!--  pattern="/^\d+$/" required/> -->
+        <input type="search" placeholder="Search" id="search" name="search_query" title="Введите только цифры"
+            minlength="3" maxlength="10" pattern="^\d+$" required />
+
+        <input type="url" name="url" />
+
+        <label for="agree">Agree</label>
+        <input type="checkbox" name="agree" id="agree" value="agree">
+
+        <div>
+            <label for="all">Search everywhere</label>
+            <input type="radio" name="search_type" id="all" value="all">
+        </div>
+        <div>
+            <label for="youtube">Search on youtube</label>
+            <input type="radio" name="search_type" id="youtube" value="youtube">
+        </div>
+
+        <div>
+            <label for="topic">Тематика</label>
+            <select name="topic" id="topic">
+                <option value="1">Все</option>
+                <optgroup label="Popular">
+
+                    <option value="2" selected>Животные</option>
+                    <option value="3">Разработка</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="range">Volume</label>
+            <input type="range" name="range" id="range" min="50" , max="200" step="50">
+        </div>
+
+        <div>
+            <label for="num">Num</label>
+            <input type="number" name="num" id="num" min="50" , max="200" step="50" value="49">
+        </div>
+
+        <div>
+            <label for="text">Комментарий</label>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Коммент"></textarea>
+        </div>
+
+        <input type="submit" value="Search" />
+    </form>
+
+
+   
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #f3ffff;
+    background-color: blueviolet;
+    font-size: 55px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.container {
+    border: 10px solid brown;
+    display: flex;
+    /*display: inline-flex;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* height: 700px; */
+    justify-content: right;
+    height: 100vh;
+    align-content: center;
+}
+
+.item {
+    background-color: blueviolet;
+    border: 1px solid brown;
+    text-align: center;
+    padding: 10px;
+    /*width: 300px;*/
+    width: calc(100% / 3);
+}
+
+
+.container2 {
+    border: 10px solid brown;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.container3 {
+    border: 10px solid brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-2 {
+    background-color: blueviolet;
+    border: 1px solid brown;
+    text-align: center;
+    padding: 10px;
+    /*  width: calc(100% / 3); */
+   /*  flex: 1; */
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.item4 {
+    flex-grow: 5;
+}
+
+/* .item3 {
+    flex: 2;
+}
+ */
+/* .item4 {
+    border: 1px solid brown;
+    text-align: center;
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+ */
+/* .item1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.item2 {
+    flex-grow: 5;
+    flex-shrink: 5;
+} */
+
+.container4 {
+    display: flex;
+    border: 10px solid brown;
+}
+
+/* 
+.container3 {
+    border: 10px solid brown;
+    display: flex;
+}
+
+.item-3 {
+    background-color: blueviolet;
+    border: 1px solid brown;
+    text-align: center;
+    padding: 10px;
+    flex-basis: 300px;
+}
+
+.item1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.item2 {
+    flex-grow: 5;
+    flex-shrink: 5;
+}
+ */
+.item3 {
+    /*  flex: 2; */
+    /* Означает, что он будет занимать в два раза больше месте, чем те у кого 1*/
+    /* ЭТО если есть для этого пространство*/
+
+    /* .item4 {
+    order: 2;
+}
+.item7 {
+    order: 1;
+} */

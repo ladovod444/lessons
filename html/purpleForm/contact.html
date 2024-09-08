@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts Us</title>
+
+    <!--  <style>
+        label {
+            color: #d02222;
+        }
+    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css" </head>
+
+<body>
+
+    <main>
+
+        <section id="hero">
+            <div class="form-wrapper">
+                <h1>Свяжитесь со мной</h1>
+
+                <form action="demo.html" method="get">
+                    <!--  <label for="search">search</label> -->
+
+                    <!--  pattern="/^\d+$/" required/> -->
+                    <div class="field">
+                        <label for="email">E-mail*</label>
+                        <input placeholder="E-mail" type="email" id="email" name="email" minlength="3" maxlength="40"
+                            required />
+
+                    </div>
+
+                    <div class="field">
+                        <label for="telegram">Telegram</label>
+                        <input type="text" id="telegram" name="telegram" minlength="3" maxlength="40" required />
+                    </div>
+
+                    <!--   <div>
+                <input type="theme" placeholder="Phone" id="theme" name="theme" />
+            </div>
+ -->
+                    <!--  <label for="agree">Agree</label>
+            <input type="checkbox" name="agree" id="agree" value="agree"> -->
+
+                    <div class="field">
+                        <label for="topic">Тема*</label>
+                        <select name="topic" id="topic">
+                            <option value="1">Приобретение курсов</option>
+                            <option value="2">Животные</option>
+                            <option value="3">Разработка</option>
+
+
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="comment">Комментарий</label>
+                        <textarea name="text" id="comment" name="comment" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input type="submit" value="Send" />
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
