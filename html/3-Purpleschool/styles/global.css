@@ -1,0 +1,28 @@
+:root {
+  --color-primary: #6C38CC;
+  --color-text: #fafafa;
+  --color-bg: #16171D;
+  --color-bg-light: #2E2D3D;
+  --color-bg-medium: #1E1F29;
+  --color-link-hover: #AFB2BF;
+  --color-stroke: #4D5064;
+  --border-8: 8px;
+}
+
+body {
+  background: var(--color-bg);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.section {}
+
+.section-header {}
+
+.section-header__h2 {}
+
+.section-header__top {}
