@@ -1,0 +1,192 @@
+/* Sections */
+
+.section {}
+
+.section_light {
+  background-color: var(--color-bg-medium);
+}
+
+button {
+  color: var(--color-text);
+  background: none;
+  border: none;
+  font-weight: 400;
+  /*  background-color: var(--color-button-bg); */
+  padding: 16px 32px;
+  font-size: 18px;
+  line-height: 21.6px;
+  border-radius: var(--border-10);
+  text-align: center;
+  cursor: pointer;
+}
+
+.button_primary {
+  background-color: var(--color-button-bg);
+  border-radius: var(--border-8);
+  text-align: center;
+}
+
+.button_ghost {
+  border: 1px solid var(--color-stroke);
+}
+
+.button_ghost:hover {
+  background: var(--color-bg-medium);
+}
+
+.button_primary:hover {
+  background: var(--color-primary-hover);
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 13px 28px;
+  }
+}
+
+/* Social */
+.social-icons {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.social-icons__icons {
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--border-8);
+  padding: 11px;
+  height: 48px;
+  width: 48px;
+}
+
+.social-icons__icons:hover {
+  background-color: var(--color-bg-medium);
+}
+
+
+/* Blog */
+
+.blog-wrapper {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+.post {
+  padding: 46px 43px;
+  display: flex;
+  flex-direction: row;
+}
+
+.post__content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post__more {
+  flex: 1;
+  text-align: right;
+}
+
+.headling {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.headling__top {
+  color: var(--color-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.post-content__info {
+  display: flex;
+  gap: 30px;
+}
+
+.post__info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  color: var(--color-link-hover);
+}
+
+.post-content__h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  margin: 0;
+}
+
+.read-more {
+  border: 1px solid var(--color-stroke);
+  color: var(--color-text);
+  width: 158px;
+  height: 54px;
+  padding: 16px 32px;
+  border-radius: var(--border-10);
+  display: inline-block;
+  text-align: center;
+}
+
+.post__all {
+  border: 1px solid var(--color-stroke);
+  color: var(--color-text);
+  width: 158px;
+  height: 54px;
+  padding: 16px 32px;
+  border-radius: var(--border-10);
+  text-align: center;
+  margin: 40px auto;
+}
+
+.read-more:hover,
+.post__all:hover {
+  background: var(--color-stroke);
+}
+
+@media (max-width: 960px) {
+  .post {
+    flex-direction: column;
+  }
+
+  .post__content {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .read-more {
+    width: 100%;
+  }
+}
+
+
+/* Paragraph */
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 787px;
+}
+
+
+/* Card */
+
+.card {
+  background-color: var(--color-bg-medium);
+  border-radius: var(--border-10);
+}
+
+/* Post-wrapper */
+.post-wrapper {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+}
