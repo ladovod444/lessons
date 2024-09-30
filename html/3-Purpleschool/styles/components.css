@@ -176,6 +176,64 @@ button {
   max-width: 787px;
 }
 
+/* Cources menu */
+.cources-menu {
+  margin-bottom: 32px;
+}
+
+.cources-menu>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  overflow: scroll;
+  margin-right: -24px;
+  margin-left: -24px;
+  padding-left: 24px;
+  /* варианты с отриц марджинами и паддаинг. нужны для того, чтобы меню при прокрутке не обрезалось */
+  /*  scrollbar-width: thin; */
+  scrollbar-width: none;
+  /* скрываем скроллбар*/
+}
+
+.courses__li {
+  padding: 8px 16px;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--border-10);
+
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  white-space: nowrap;
+  /* означает, что не будут переноситься слова на новую строку */
+}
+
+.courses__li_active {
+  background-color: var(--color-button-bg);
+  border: none;
+}
+
+.courses__li:hover {
+  background-color: var(--color-bg-medium);
+  cursor: pointer;
+}
+
+.courses__li_active:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.cources__h2 {
+  margin-bottom: 50px;
+}
+
+/* Course card */
+.course-card {
+  border: 1px solid gainsboro;
+  background-color: var(--color-bg-medium);
+  border-radius: var(--border-10);
+}
 
 /* Card */
 
@@ -184,9 +242,104 @@ button {
   border-radius: var(--border-10);
 }
 
-/* Post-wrapper */
-.post-wrapper {
+.card__cover {
+ /*  background-image: url(../images/card/card-image.png);
+  background-size: contain;
+  width: 100%;
+  height: 177px;
+  background-repeat: no-repeat; */
+}
+
+.card__cover img {
+  border-radius: var(--border-10) var(--border-10) 0 0 ;
+  width: 100%;
+}
+
+.card__content {
   display: flex;
-  gap: 48px;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+  padding: 24px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  margin: 0;
+}
+
+.card__author {
+  color: var(--color-link-hover);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.card__lections {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.card__lections::before {
+  content: url(../images/card/time.svg);
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.reviews,
+.category {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--border-17);
+  padding: 6px 12px;
+}
+
+.reviews {
+  display: flex;
+  gap: 5px;
+}
+
+.reviews::before {
+  content: url(../images/card/star.svg);
+  height: 17px;
+}
+
+.card__footer {
+  background: var(--color-bg-light);
+  padding: 24px;
+  /*display: flex;*/
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  /*justify-content: space-between;*/
+  align-items: center;
+  border-radius: 0 0 var(--border-10) var(--border-10);
+  
+}
+
+.card__price {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+.card__additional {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 960px) {
+  
 }
